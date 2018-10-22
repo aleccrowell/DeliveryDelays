@@ -24,7 +24,7 @@ ax.set_ylim(0, 1)
 plt.xlabel('Time to Delivery (hrs)')
 plt.ylabel('Frac. Not Delivered')
 plt.title('Time to Vaginal Delivery as a Function of Dosing Interval')
-plt.savefig('output/traditional_KM.pdf')
+plt.savefig('output/traditional_KM.png')
 
 kmf = KaplanMeierFitter()
 
@@ -42,7 +42,7 @@ ax.set_ylim(0, 1)
 plt.xlabel('Time to Delivery (hrs)')
 plt.ylabel('Frac. Not Delivered')
 plt.title('Delay Adjusted Time to Vaginal Delivery as a Function of Dosing Interval')
-plt.savefig('output/adjusted_KM.pdf')
+plt.savefig('output/adjusted_KM.png')
 
 
 

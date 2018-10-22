@@ -20,4 +20,4 @@ For this analysis, we have two groups - cases where the dosing interval guidelin
 Kaplan-Meier estimator, which is more commonly used to estimate survival (i.e. do mice with a given disease survive longer on treatment A or B), is perfectly applicable to this scenario.  In our case, normal births are analogous 
 to deaths and operative deliveries are censorship events (since we don't know how much longer a woman would have labored without outside intervention).  We can perform this analysis easily using the lifelines package in python:
 
-![ImageRelative](output/traditional_KM.pdf "Traditional_KM")
+![ImageRelative](output/traditional_KM.png "Traditional_KM")
