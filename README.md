@@ -21,3 +21,11 @@ Kaplan-Meier estimator, which is more commonly used to estimate survival (i.e. d
 to deaths and operative deliveries are censorship events (since we don't know how much longer a woman would have labored without outside intervention).  We can perform this analysis easily using the lifelines package in python:
 
 ![ImageRelative](output/traditional_KM.png "Traditional_KM")
+
+There is clear divergence between the 95% confidence intervals for the two groups, and it is obvious that failure to follow the dosing interval guidelines results in longer labors.  Even though the result supports our initial 
+hypothesis, this is where the really interesting technical question surfaced.  Is the increase in labor a 1:1 product of the delay in dosing or does a delay in dosing produce a disproportionate increase in labor times?  Another 
+way of phrasing this would be to ask if a 1 hour delay in the dosing interval would be expected to produce a 1 hour increase in labor times or a much larger increase?  This question is important because many of the deviations from 
+the dosing interval guidelines were on a timescale that isn't clinically significant for labor.  The solution to this question is actually quite simple; all we need to do is adjust the times to delivery by subtracting the delays 
+in dosing and see if the Kaplan-Meier curves still differ:
+
+![ImageRelative](output/adjusted_KM.png "Adjusted_KM")
