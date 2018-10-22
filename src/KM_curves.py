@@ -54,7 +54,7 @@ ax.set_xlim(0, 60)
 ax.set_ylim(0, 1)
 plt.xlabel('Time to Delivery (hrs)')
 plt.ylabel('Frac. Not Delivered')
-plt.title('Predicted Delivery Curves as a Function of Cumulative Dosing Interval Delay')
+plt.title('Predicted Delivery Curves as a Function of Cumulative Dosing Delay')
 plt.savefig('output/predicted_KM.png')
 
 
