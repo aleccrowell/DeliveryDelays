@@ -36,3 +36,17 @@ contribution though, and how much of an increase in labor time can we expect bas
 ![ImageRelative](output/predicted_KM.png "predicted_KM")
 
 As you can see, a ~4 hour delay in dosing can be expected to result in an ~10 hour increase in labor time, emphasizing the importance of timely dosing. 
+
+----
+Built With
+----
+
+* numpy
+* pandas
+* lifelines
+
+-------
+License
+-------
+
+© 2017 Alexander M. Crowell: BSD-3
