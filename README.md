@@ -29,3 +29,10 @@ the dosing interval guidelines were on a timescale that isn't clinically signifi
 in dosing and see if the Kaplan-Meier curves still differ:
 
 ![ImageRelative](output/adjusted_KM.png "Adjusted_KM")
+
+The difference between the curves has decreased as one would expect, but they are still quite distinct.  From this we can conclude that the contribution of dosing delays to time in labor is greater than 1:1.  What exactly is the 
+contribution though, and how much of an increase in labor time can we expect based on a given delay?  This question can be answered with a Cox Proportional Hazard Model:
+
+![ImageRelative](output/predicted_KM.png "predicted_KM")
+
+As you can see, a ~4 hour delay in dosing can be expected to result in an ~10 hour increase in labor time, emphasizing the importance of timely dosing. 
